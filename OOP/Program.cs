@@ -4,13 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Person person1 = new Person("Bob1", 31, "Ally",  null, new DateTime (1993,1,1));
+            /*
+            Person person1 = new Person("Bob1", 31, "Ally", null, new DateTime(1993, 1, 1));
             Person person2 = new Person("Bob2", 32, "Ally", null, new DateTime(1993, 1, 1));
             Person person3 = new Person("Bob3", 33, "Ally", null, new DateTime(1993, 1, 1));
-            
+
             person1.Introduce();
             person2.Introduce();
-            person3.Introduce();
+            person3.Introduce();*/
+
+            Employee employee1 = new Employee("Alice", 28, "Ace", null, new DateTime(1995, 5, 15), "Software Developer", 5000m);
+            employee1.Introduce();
         }
 
     }
@@ -46,7 +50,7 @@
         public static int Population { get; private set; } = 0;
         //constructor
         public Person()
-        {  if (this.Name.Length == 0)
+        { if (this.Name.Length == 0)
             {
                 this.Name = "Unknown";
             }
@@ -66,8 +70,41 @@
         {
             Console.WriteLine($"Hello, my name is {Name}, I'm {Age} years old. My nickname is {Nickname}. I was born on {BirthDate.ToShortDateString()}");
         }
+
+    }
+    public class Employee : Person
+    {
+        public string Position { get; set; } = "Unemployed";
+        private decimal _salary;
+        private const decimal MinimumSalaryMX = 278.80m;
+
+        public decimal Salary
+        {
+            get { return _salary; }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Salary cannot be negative");
+                }
+                if (value < MinimumSalaryMX)
+                {
+                    throw new ArgumentException($"Salary cannot be less than the minimum wage {MinimumSalaryMX}");
+                }
+                _salary = value;
+            }
+        }
+        public Employee(string name, int age, string nickname, int? couple, DateTime birthDate, string position, decimal _salary)
+            : base(name, age, nickname, couple, birthDate)
+        {
+            Position = position;
+            Salary = _salary;
+        }
+        public override void Introduce()
+        {
+            base.Introduce();
+            Console.WriteLine($"I work as a {Position} and my salary is {Salary:C}");
+        }
     }
 }
-
-    
 

@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlFlowStatements", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{200BAF18-30E7-4F26-8BDA-EC218C30D28C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomExceptions", "CustomExceptions\CustomExceptions.csproj", "{98247377-71AA-44DD-9EDF-E432F3C80991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{04DB38AE-A61C-4266-B0B1-D22F0FC76909}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{200BAF18-30E7-4F26-8BDA-EC218C30D28C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{200BAF18-30E7-4F26-8BDA-EC218C30D28C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{200BAF18-30E7-4F26-8BDA-EC218C30D28C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98247377-71AA-44DD-9EDF-E432F3C80991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98247377-71AA-44DD-9EDF-E432F3C80991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98247377-71AA-44DD-9EDF-E432F3C80991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98247377-71AA-44DD-9EDF-E432F3C80991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04DB38AE-A61C-4266-B0B1-D22F0FC76909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04DB38AE-A61C-4266-B0B1-D22F0FC76909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04DB38AE-A61C-4266-B0B1-D22F0FC76909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04DB38AE-A61C-4266-B0B1-D22F0FC76909}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
