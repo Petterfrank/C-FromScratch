@@ -105,6 +105,9 @@
             base.Introduce();
             Console.WriteLine($"I work as a {Position} and my salary is {Salary:C}");
         }
+
+
+
     }
 }
 
